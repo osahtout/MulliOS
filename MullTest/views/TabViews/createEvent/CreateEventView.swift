@@ -53,23 +53,19 @@ struct CreateEventView: View
                     
                     PrivacyButtonsPicker(eventPrivacy: $eventPrivacy)
                     
-//                    GenericButton(buttonName: "Next")
-//                        .background(
-//                            NavigationLink("",
-//                                destination: EventView(
-//                                    titlePage: "Event Details",
-//                                    eventTitle: "aaaaaa",
-//                                    image: "Image-1",
-//                                    location: "aaaaa",
-//                                    startDayAndMonth: "aaaaa",
-//                                    SartTime: "aaaa",
-//                                    endDayAndMonth: "111111",
-//                                    endTime: "aaaaaaa"
-//                                    )
-//                                ).opacity(0)
-//                            )
-//                        .frame( maxWidth: .infinity)
-//                        .listRowSeparator(.hidden)
+                    NavigationLink(destination: EventView(
+                                                   titlePage: "Preview",
+                                                   eventTitle: "aaaaaa",
+                                                   image: "Image-1",
+                                                   location: "aaaaa",
+                                                   startDayAndMonth: "aaaaa",
+                                                   SartTime: "aaaa",
+                                                   endDayAndMonth: "111111",
+                                                   endTime: "aaaaaaa"
+                                                   )) {
+                        GenericButton(buttonName: "Next")
+                    }
+                    .padding(.top)
                 }
             }
         }

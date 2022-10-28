@@ -64,6 +64,12 @@ struct EventView: View
                     // navigation to friend list
                     
                     EventViewRowDetails(icon: "person.3.sequence", content: picturesOfFriends)
+                    
+                    if(titlePage == "Preview")
+                    {
+                        GenericButton(buttonName: "Done")
+                            .padding(.top)
+                    }
                 }
                 
             }
